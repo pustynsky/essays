@@ -1,0 +1,32 @@
+title: Сергей Пустынский
+description: Эссе
+lang: ru
+locale: ru_RU
+author: Сергей Пустынский
+url: https://pustynsky.github.io
+baseurl: /essays
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - .gitattributes
+
+# Essays have no front matter, so the same file can be published to the gist as is.
+# GitHub Pages picks them up via jekyll-optional-front-matter and takes the title from the first heading.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: bog-eshche-ne-rodilsya.md
+    values:
+      description: Ницше написал, что Бог умер. Это было преждевременно. Бог ещё не родился.
+      image:
+        path: /assets/img/bog-eshche-ne-rodilsya/og.jpg
+        width: 1200
+        height: 630
+        alt: Бог в покрове, очертаниями похожем на мозг в разрезе, протягивает руку Адаму
+

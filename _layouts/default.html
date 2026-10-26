@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'ru' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+</head>
+<body>
+  <div class="container">
+    <main class="page">
+{{ content }}
+    </main>
+    {% unless page.url == '/' %}
+    <footer class="site-footer"><a href="{{ '/' | relative_url }}">Все эссе</a></footer>
+    {% endunless %}
+  </div>
+</body>
+</html>
+
